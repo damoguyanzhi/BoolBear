@@ -9,6 +9,7 @@
 #import "CustomTableViewController.h"
 #import "UIButtonShowViewController.h"
 #import "UILabelShowViewController.h"
+#import "ShowModel.h"
 
 @interface CustomTableViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -43,18 +44,16 @@
     NSString *cellId = @"UITableViewCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.textLabel.text = [self.dataArray objectAtIndex:indexPath.row];
+    ShowSonModel *model = self.dataArray[indexPath.row];
+    cell.textLabel.text = model.type;
     
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSString *type = self.dataArray[indexPath.row];
-    if([type isEqualToString:@"UIButton"]){
-        [self.navigationController pushViewController:[[UIButtonShowViewController alloc]init] animated:YES];
-    }else if([type isEqualToString:@"UIlabel"]){
-        [self.navigationController pushViewController:[[UILabelShowViewController alloc]init] animated:YES];
-    }
+    ShowSonModel *model = self.dataArray[indexPath.row];
+    UIViewController *vc = [NSClassFromString(model.exampleVC) new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - event (事件)
@@ -74,6 +73,7 @@
     [_navigationBar.leftButton addTarget:self action:@selector(clickLeft:) forControlEvents:UIControlEventTouchUpInside];
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, self.navigationBar.frame.size.height, self.view.bounds.size.width, self.view.bounds.size.height - self.navigationBar.frame.size.height) style:UITableViewStylePlain];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
+    self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
     [self.view addSubview:self.tableView];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;

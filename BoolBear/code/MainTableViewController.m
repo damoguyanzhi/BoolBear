@@ -12,10 +12,12 @@
 #import "CustomButton.h"
 #import "DataModel.h"
 #import "CommonData.h"
-
+#import "ShowModel.h"
+#import <MJExtension.h>
 @interface MainTableViewController ()<UITableViewDataSource>
 
 @property(nonatomic,strong)NSMutableArray *dataArray;
+@property(nonatomic,strong)ShowModel *model;
 
 @end
 
@@ -29,10 +31,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.dataArray = [DataModel defaultConfig].typeNameArray;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
     self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
-   
+    [self loadConfigJson];
+}
+
+-(void)loadConfigJson{
+    NSString *strPath = [[NSBundle mainBundle] pathForResource:@"show" ofType:@"geojson"];
+    NSString *parseJason = [[NSString alloc] initWithContentsOfFile:strPath encoding:NSUTF8StringEncoding error:nil];
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:[parseJason dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:nil];
+    self.model = [ShowModel mj_objectWithKeyValues:dict[@"firstShow"]];
+    self.dataArray = [self.model.typeList mutableCopy];
+    [self.tableView reloadData];
 }
 
 #pragma mark - Table view data source
@@ -42,7 +52,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.dataArray.count;
+    return self.dataArray.count > 0?self.dataArray.count:0;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -55,22 +65,16 @@
         cell = [tableView cellForRowAtIndexPath:indexPath];
     }
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.textLabel.text = [self.dataArray objectAtIndex:indexPath.row];
+    ShowTypeModel *model = self.dataArray[indexPath.row];
+    cell.textLabel.text = model.type;
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     CustomTableViewController *vc;
-    if([[self.dataArray objectAtIndex:indexPath.row] isEqualToString:@"UI"]){
-        vc = [[CustomTableViewController alloc]init];
-        vc.dataArray = [DataModel defaultConfig].uiNameArray;
-    }else if([[self.dataArray objectAtIndex:indexPath.row] isEqualToString:@"Tool"]){
-        vc = [[CustomTableViewController alloc]init];
-        vc.dataArray = [[NSMutableArray alloc]initWithObjects:@"NumberTool", nil];
-    }else if([[self.dataArray objectAtIndex:indexPath.row] isEqualToString:@"第三方类demo"]){
-        vc = [[ThreeClassViewController alloc]init];
-        vc.dataArray = [[NSMutableArray alloc]initWithObjects:@"MjExtension",@"ClickPartInUILabel",@"GetUIlabelIndexViewController", nil];
-    }
+    ShowTypeModel *model = self.dataArray[indexPath.row];
+    vc = [[CustomTableViewController alloc]init];
+    vc.dataArray = [model.sonContent mutableCopy];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

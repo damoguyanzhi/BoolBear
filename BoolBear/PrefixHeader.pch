@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  BoolBear
+//
+//  Created by RuqiangLiu on 2019/7/25.
+//  Copyright © 2019 RuqiangLiu. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+#import "Masonry.h"
+#import "MJExtension.h"
+#import "UIView+XL.h"
+#import "NSString+Custom.h"
+#import "CommonData.h"
+#import "MBProgressHUD+XL.h"

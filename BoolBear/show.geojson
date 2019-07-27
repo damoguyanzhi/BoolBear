@@ -1,0 +1,20 @@
+{
+    "firstShow": {
+        "name":"首页展示内容",
+        "typeList":[
+            {"type":"UI","vc":"CustomTableViewController",
+                "sonContent":
+                [{"type":"UIButton","exampleVC":"UIButtonShowViewController"},
+                    {"type":"UILabel","exampleVC":"UILabelShowViewController"}
+                ]},
+            {"type":"Tool","vc":"CustomTableViewController","sonContent":
+                [{"type":"UIButton","exampleVC":""},
+                    {"type":"UILabel","exampleVC":""}
+                ]},
+            {"type":"ThreeTool","vc":"CustomTableViewController","sonContent":
+                [{"type":"MJExtension","exampleVC":"MJExtensionClassViewController"},
+                    {"type":"GetUIlabelIndex","exampleVC":"GetUIlabelIndexViewController"}
+                ]}
+        ]
+    }
+}

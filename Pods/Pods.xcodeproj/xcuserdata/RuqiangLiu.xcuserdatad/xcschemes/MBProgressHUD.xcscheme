@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "71FE7926DE4B85C4FE71396FDD7F61E0"
-               BuildableName = "libYBAttributeTextTapAction.a"
-               BlueprintName = "YBAttributeTextTapAction"
+               BlueprintIdentifier = "4C57AC15136E9697588CFACE7EB6EE06"
+               BuildableName = "libMBProgressHUD.a"
+               BlueprintName = "MBProgressHUD"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

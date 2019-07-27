@@ -19,6 +19,11 @@
 		9E04780C225DC98300442504 /* UILabelShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E04780B225DC98300442504 /* UILabelShowViewController.m */; };
 		9E07043522E7023B0043C843 /* ClickPartInUILabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E07043422E7023B0043C843 /* ClickPartInUILabelViewController.m */; };
 		9E09628C22E839A500059E84 /* GetUIlabelIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E09628B22E839A500059E84 /* GetUIlabelIndexViewController.m */; };
+		9E09629522E9490800059E84 /* UIView+XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E09629322E9490800059E84 /* UIView+XL.m */; };
+		9E09629B22E9557500059E84 /* show.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 9E09629A22E9557500059E84 /* show.geojson */; };
+		9E09629E22E95BA200059E84 /* ShowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E09629D22E95BA200059E84 /* ShowModel.m */; };
+		9E0962A122E991F600059E84 /* MBProgressHUD+XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0962A022E991F500059E84 /* MBProgressHUD+XL.m */; };
+		9E0962A422E9971300059E84 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0962A322E9971300059E84 /* Manager.m */; };
 		9E17EE1D20F9C58500A3F8DA /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E17EE1C20F9C58500A3F8DA /* MainTableViewController.m */; };
 		9E17EE2020F9CDB900A3F8DA /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E17EE1F20F9CDB900A3F8DA /* CustomTableViewController.m */; };
 		9E17EE2420F9DA2E00A3F8DA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E17EE2320F9DA2E00A3F8DA /* MainViewController.m */; };
@@ -58,6 +63,16 @@
 		9E07043422E7023B0043C843 /* ClickPartInUILabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClickPartInUILabelViewController.m; sourceTree = "<group>"; };
 		9E09628A22E839A500059E84 /* GetUIlabelIndexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetUIlabelIndexViewController.h; sourceTree = "<group>"; };
 		9E09628B22E839A500059E84 /* GetUIlabelIndexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetUIlabelIndexViewController.m; sourceTree = "<group>"; };
+		9E09628D22E9411D00059E84 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		9E09629222E9490800059E84 /* UIView+XL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XL.h"; sourceTree = "<group>"; };
+		9E09629322E9490800059E84 /* UIView+XL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XL.m"; sourceTree = "<group>"; };
+		9E09629A22E9557500059E84 /* show.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = show.geojson; sourceTree = "<group>"; };
+		9E09629C22E95BA200059E84 /* ShowModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowModel.h; sourceTree = "<group>"; };
+		9E09629D22E95BA200059E84 /* ShowModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowModel.m; sourceTree = "<group>"; };
+		9E09629F22E991F500059E84 /* MBProgressHUD+XL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+XL.h"; sourceTree = "<group>"; };
+		9E0962A022E991F500059E84 /* MBProgressHUD+XL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+XL.m"; sourceTree = "<group>"; };
+		9E0962A222E9971300059E84 /* Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
+		9E0962A322E9971300059E84 /* Manager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
 		9E17EE1B20F9C58500A3F8DA /* MainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
 		9E17EE1C20F9C58500A3F8DA /* MainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		9E17EE1E20F9CDB900A3F8DA /* CustomTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableViewController.h; sourceTree = "<group>"; };
@@ -142,17 +157,60 @@
 				9E0477F9225D954E00442504 /* DataModel.m */,
 				9E72C07022C0B988004E6535 /* UserModel.h */,
 				9E72C07122C0B988004E6535 /* UserModel.m */,
+				9E09629C22E95BA200059E84 /* ShowModel.h */,
+				9E09629D22E95BA200059E84 /* ShowModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
 		};
-		9E047803225DBD0C00442504 /* category */ = {
+		9E09628F22E9438800059E84 /* code */ = {
+			isa = PBXGroup;
+			children = (
+				9E0477F7225D951D00442504 /* model */,
+				9E0477EC225D8C3700442504 /* vc */,
+				9E17EE2120F9D43400A3F8DA /* common */,
+				9E38514A209C075B0097FB84 /* AppDelegate.h */,
+				9E38514B209C075B0097FB84 /* AppDelegate.m */,
+				9E17EE1B20F9C58500A3F8DA /* MainTableViewController.h */,
+				9E17EE1C20F9C58500A3F8DA /* MainTableViewController.m */,
+				9E17EE2220F9DA2E00A3F8DA /* MainViewController.h */,
+				9E17EE2320F9DA2E00A3F8DA /* MainViewController.m */,
+			);
+			path = code;
+			sourceTree = "<group>";
+		};
+		9E09629122E946C300059E84 /* supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E385150209C075B0097FB84 /* Main.storyboard */,
+				9E385153209C075B0097FB84 /* Assets.xcassets */,
+				9E385155209C075B0097FB84 /* LaunchScreen.storyboard */,
+				9E385158209C075B0097FB84 /* Info.plist */,
+				9E385159209C075B0097FB84 /* main.m */,
+				9E09628D22E9411D00059E84 /* PrefixHeader.pch */,
+				9E09629A22E9557500059E84 /* show.geojson */,
+			);
+			name = "supporting Files";
+			sourceTree = "<group>";
+		};
+		9E09629722E94DE600059E84 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				9E09629F22E991F500059E84 /* MBProgressHUD+XL.h */,
+				9E0962A022E991F500059E84 /* MBProgressHUD+XL.m */,
+				9E31C03322602AD100769138 /* UIButton+Custom.h */,
+				9E31C03422602AD100769138 /* UIButton+Custom.m */,
+				9E09629222E9490800059E84 /* UIView+XL.h */,
+				9E09629322E9490800059E84 /* UIView+XL.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		9E09629922E9523B00059E84 /* category */ = {
 			isa = PBXGroup;
 			children = (
 				9E047804225DBD4300442504 /* NSString+Custom.h */,
 				9E047805225DBD4300442504 /* NSString+Custom.m */,
-				9E31C03322602AD100769138 /* UIButton+Custom.h */,
-				9E31C03422602AD100769138 /* UIButton+Custom.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -160,6 +218,7 @@
 		9E17EE1620F9A50A00A3F8DA /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				9E09629722E94DE600059E84 /* category */,
 				9E0477DE2255D14400442504 /* CustomButton.h */,
 				9E0477DF2255D14400442504 /* CustomButton.m */,
 				9E0477E5225C4C3700442504 /* CustomNaviationBarView.h */,
@@ -184,11 +243,12 @@
 		9E17EE2120F9D43400A3F8DA /* common */ = {
 			isa = PBXGroup;
 			children = (
-				9E047803225DBD0C00442504 /* category */,
+				9E17EE1620F9A50A00A3F8DA /* ui */,
 				9E0477E8225C625F00442504 /* data */,
 				9E17EE1720F9A51300A3F8DA /* controller */,
-				9E17EE1620F9A50A00A3F8DA /* ui */,
 				9E385166209C07CD0097FB84 /* util */,
+				9E0962A222E9971300059E84 /* Manager.h */,
+				9E0962A322E9971300059E84 /* Manager.m */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -214,20 +274,8 @@
 		9E385149209C075B0097FB84 /* BoolBear */ = {
 			isa = PBXGroup;
 			children = (
-				9E0477F7225D951D00442504 /* model */,
-				9E0477EC225D8C3700442504 /* vc */,
-				9E17EE2120F9D43400A3F8DA /* common */,
-				9E38514A209C075B0097FB84 /* AppDelegate.h */,
-				9E38514B209C075B0097FB84 /* AppDelegate.m */,
-				9E17EE1B20F9C58500A3F8DA /* MainTableViewController.h */,
-				9E17EE1C20F9C58500A3F8DA /* MainTableViewController.m */,
-				9E17EE2220F9DA2E00A3F8DA /* MainViewController.h */,
-				9E17EE2320F9DA2E00A3F8DA /* MainViewController.m */,
-				9E385150209C075B0097FB84 /* Main.storyboard */,
-				9E385153209C075B0097FB84 /* Assets.xcassets */,
-				9E385155209C075B0097FB84 /* LaunchScreen.storyboard */,
-				9E385158209C075B0097FB84 /* Info.plist */,
-				9E385159209C075B0097FB84 /* main.m */,
+				9E09629122E946C300059E84 /* supporting Files */,
+				9E09628F22E9438800059E84 /* code */,
 			);
 			path = BoolBear;
 			sourceTree = "<group>";
@@ -235,6 +283,7 @@
 		9E385166209C07CD0097FB84 /* util */ = {
 			isa = PBXGroup;
 			children = (
+				9E09629922E9523B00059E84 /* category */,
 				9E385160209C07A80097FB84 /* NumberTool.h */,
 				9E385161209C07A80097FB84 /* NumberTool.m */,
 			);
@@ -308,6 +357,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E09629B22E9557500059E84 /* show.geojson in Resources */,
 				9E385157209C075B0097FB84 /* LaunchScreen.storyboard in Resources */,
 				9E385154209C075B0097FB84 /* Assets.xcassets in Resources */,
 				9E385152209C075B0097FB84 /* Main.storyboard in Resources */,
@@ -354,7 +404,9 @@
 				9E385162209C07A80097FB84 /* NumberTool.m in Sources */,
 				9E047809225DC83E00442504 /* CustomTopLabel.m in Sources */,
 				9E0477F6225D8FD300442504 /* UIButtonShowViewController.m in Sources */,
+				9E0962A422E9971300059E84 /* Manager.m in Sources */,
 				9E0477E02255D14400442504 /* CustomButton.m in Sources */,
+				9E0962A122E991F600059E84 /* MBProgressHUD+XL.m in Sources */,
 				9E047806225DBD4300442504 /* NSString+Custom.m in Sources */,
 				9E17EE1D20F9C58500A3F8DA /* MainTableViewController.m in Sources */,
 				9E17EE2020F9CDB900A3F8DA /* CustomTableViewController.m in Sources */,
@@ -366,6 +418,8 @@
 				9E72C06C22C0B2D1004E6535 /* ThreeClassViewController.m in Sources */,
 				9E72C07222C0B988004E6535 /* UserModel.m in Sources */,
 				9E0477FD225DB4E300442504 /* CustomNavigationViewController.m in Sources */,
+				9E09629E22E95BA200059E84 /* ShowModel.m in Sources */,
+				9E09629522E9490800059E84 /* UIView+XL.m in Sources */,
 				9E0477EB225C628E00442504 /* CommonData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +561,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GL5TZEAAB7;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BoolBear/PrefixHeader.pch;
 				INFOPLIST_FILE = BoolBear/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -524,6 +580,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GL5TZEAAB7;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BoolBear/PrefixHeader.pch;
 				INFOPLIST_FILE = BoolBear/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -4,4 +4,5 @@ target 'BoolBear' do
   pod 'MJExtension'
   pod 'YBAttributeTextTapAction'
   pod 'CharacterLocationSeeker'
+  pod 'MBProgressHUD'
 end

@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#define SCREEN_WIDTH  [[UIScreen mainScreen] bounds].size.width;//屏幕宽度
+#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height;//屏幕宽度
+
 #define CommonTabBarHeight 49;
 
 @interface CommonData : NSObject

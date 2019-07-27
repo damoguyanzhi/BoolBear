@@ -8,6 +8,7 @@
 
 #import "GetUIlabelIndexViewController.h"
 #import "CharacterLocationSeeker.h"
+#import "Manager.h"
 
 @interface GetUIlabelIndexViewController ()
 
@@ -25,7 +26,7 @@
 }
 
 -(void)clickModifyButton:(UIButton *)button{
-    NSLog(@"clickModifyButton");
+    [MBProgressHUD showText:@"点击修改" toView:self.view];
 }
 
 -(void)addTestLabel{
@@ -42,6 +43,7 @@
     self.label.font = [UIFont systemFontOfSize:12];
     self.label.textColor = [UIColor grayColor];
     self.label.numberOfLines = 0;
+    self.label.textColor = @"#000000".toColor;
     
     
     self.label.attributedText = attributedString;
