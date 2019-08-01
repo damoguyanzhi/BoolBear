@@ -75,6 +75,7 @@
     ShowTypeModel *model = self.dataArray[indexPath.row];
     vc = [[CustomTableViewController alloc]init];
     vc.dataArray = [model.sonContent mutableCopy];
+    vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
 

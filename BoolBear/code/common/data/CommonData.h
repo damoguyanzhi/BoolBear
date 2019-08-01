@@ -14,11 +14,15 @@
 
 #define CommonTabBarHeight 49;
 
+#define NavigationBarH  [CommonData defaultConfig].navigationBarHeight;
+
+
+
 @interface CommonData : NSObject
 
-@property(nonatomic,assign)NSInteger navigationBarWidth;
+@property(nonatomic,assign)CGFloat navigationBarWidth;
 
-@property(nonatomic,assign)NSInteger navigationBarHeight;
+@property(nonatomic,assign)CGFloat navigationBarHeight;
 
 +(instancetype)defaultConfig;
 

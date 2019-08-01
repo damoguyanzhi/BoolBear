@@ -7,7 +7,6 @@
 //
 
 #import "CustomNaviationBarView.h"
-#import "CommonData.h"
 #import "NSString+Custom.h"
 
 @interface CustomNaviationBarView()

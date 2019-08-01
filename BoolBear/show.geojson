@@ -8,8 +8,7 @@
                     {"type":"UILabel","exampleVC":"UILabelShowViewController"}
                 ]},
             {"type":"Tool","vc":"CustomTableViewController","sonContent":
-                [{"type":"UIButton","exampleVC":""},
-                    {"type":"UILabel","exampleVC":""}
+                [{"type":"获取Label高度","exampleVC":"LabelHeightViewController"}
                 ]},
             {"type":"ThreeTool","vc":"CustomTableViewController","sonContent":
                 [{"type":"MJExtension","exampleVC":"MJExtensionClassViewController"},

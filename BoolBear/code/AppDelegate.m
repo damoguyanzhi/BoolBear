@@ -20,7 +20,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[MainTableViewController alloc]init]];
+    MainTableViewController *mainVC = [[MainTableViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mainVC];
     nav.navigationBarHidden = YES;
     UITabBarController *tabVC = [[UITabBarController alloc]init];
    

@@ -7,11 +7,9 @@
 //
 
 #import "CustomNavigationViewController.h"
-#import "CustomNaviationBarView.h"
 
 @interface CustomNavigationViewController ()
 
-@property(nonatomic,strong)CustomNaviationBarView *navigationView;
 
 @end
 

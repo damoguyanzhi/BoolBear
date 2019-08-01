@@ -23,6 +23,9 @@
     [super viewDidLoad];
     self.navigationController.navigationBarHidden = YES;
     self.view.backgroundColor = [UIColor whiteColor];
+    if(self.hideBottom){
+        self.view.height = self.view.height - CommonTabBarHeight;
+    }
     [self makeUI];
 }
 
@@ -74,6 +77,7 @@
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, self.navigationBar.frame.size.height, self.view.bounds.size.width, self.view.bounds.size.height - self.navigationBar.frame.size.height) style:UITableViewStylePlain];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
     self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+    self.tableView.height = self.view.height;
     [self.view addSubview:self.tableView];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;

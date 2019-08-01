@@ -24,6 +24,7 @@
 		9E09629E22E95BA200059E84 /* ShowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E09629D22E95BA200059E84 /* ShowModel.m */; };
 		9E0962A122E991F600059E84 /* MBProgressHUD+XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0962A022E991F500059E84 /* MBProgressHUD+XL.m */; };
 		9E0962A422E9971300059E84 /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0962A322E9971300059E84 /* Manager.m */; };
+		9E13500622F01B2F00499062 /* LabelHeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E13500522F01B2F00499062 /* LabelHeightViewController.m */; };
 		9E17EE1D20F9C58500A3F8DA /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E17EE1C20F9C58500A3F8DA /* MainTableViewController.m */; };
 		9E17EE2020F9CDB900A3F8DA /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E17EE1F20F9CDB900A3F8DA /* CustomTableViewController.m */; };
 		9E17EE2420F9DA2E00A3F8DA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E17EE2320F9DA2E00A3F8DA /* MainViewController.m */; };
@@ -73,6 +74,8 @@
 		9E0962A022E991F500059E84 /* MBProgressHUD+XL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+XL.m"; sourceTree = "<group>"; };
 		9E0962A222E9971300059E84 /* Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Manager.h; sourceTree = "<group>"; };
 		9E0962A322E9971300059E84 /* Manager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Manager.m; sourceTree = "<group>"; };
+		9E13500422F01B2F00499062 /* LabelHeightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelHeightViewController.h; sourceTree = "<group>"; };
+		9E13500522F01B2F00499062 /* LabelHeightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelHeightViewController.m; sourceTree = "<group>"; };
 		9E17EE1B20F9C58500A3F8DA /* MainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
 		9E17EE1C20F9C58500A3F8DA /* MainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		9E17EE1E20F9CDB900A3F8DA /* CustomTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableViewController.h; sourceTree = "<group>"; };
@@ -146,6 +149,8 @@
 				9E07043422E7023B0043C843 /* ClickPartInUILabelViewController.m */,
 				9E09628A22E839A500059E84 /* GetUIlabelIndexViewController.h */,
 				9E09628B22E839A500059E84 /* GetUIlabelIndexViewController.m */,
+				9E13500422F01B2F00499062 /* LabelHeightViewController.h */,
+				9E13500522F01B2F00499062 /* LabelHeightViewController.m */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -404,6 +409,7 @@
 				9E385162209C07A80097FB84 /* NumberTool.m in Sources */,
 				9E047809225DC83E00442504 /* CustomTopLabel.m in Sources */,
 				9E0477F6225D8FD300442504 /* UIButtonShowViewController.m in Sources */,
+				9E13500622F01B2F00499062 /* LabelHeightViewController.m in Sources */,
 				9E0962A422E9971300059E84 /* Manager.m in Sources */,
 				9E0477E02255D14400442504 /* CustomButton.m in Sources */,
 				9E0962A122E991F600059E84 /* MBProgressHUD+XL.m in Sources */,
@@ -559,6 +565,7 @@
 			baseConfigurationReference = ED6242445BE5DD5C8F1A903B /* Pods-BoolBear.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GL5TZEAAB7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -569,6 +576,7 @@
 				OTHER_LIBTOOLFLAGS = "$(inherited) -ObjC -l\"Masonry\" -framework \"Foundation\" -framework \"UIKit\"";
 				PRODUCT_BUNDLE_IDENTIFIER = idea.BoolBear;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -578,6 +586,7 @@
 			baseConfigurationReference = D534692445EF44CAA7575867 /* Pods-BoolBear.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GL5TZEAAB7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -588,6 +597,7 @@
 				OTHER_LIBTOOLFLAGS = "$(inherited) -ObjC -l\"Masonry\" -framework \"Foundation\" -framework \"UIKit\"";
 				PRODUCT_BUNDLE_IDENTIFIER = idea.BoolBear;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

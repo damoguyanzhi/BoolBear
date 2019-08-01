@@ -17,4 +17,6 @@
 
 @property(nonatomic,strong)CustomNaviationBarView *navigationBar;
 
+@property(nonatomic,assign)BOOL hideBottom;
+
 @end
