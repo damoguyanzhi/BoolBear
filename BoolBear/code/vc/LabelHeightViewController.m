@@ -14,6 +14,8 @@
 
 @property(nonatomic,strong)UIScrollView *scrollView;
 
+@property(nonatomic,strong)UILabel *label;
+
 @end
 
 @implementation LabelHeightViewController
@@ -21,8 +23,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, [CommonData defaultConfig].navigationBarHeight, self.view.width,self.view.height - [CommonData defaultConfig].navigationBarHeight)];
-    self.scrollView.contentSize = CGSizeMake(self.view.width, self.view.height - [CommonData defaultConfig].navigationBarHeight);
+    [self.scrollView setContentSize:CGSizeMake(self.view.width, self.view.height - [CommonData defaultConfig].navigationBarHeight)];
     self.scrollView.scrollEnabled = YES;
+    self.scrollView.userInteractionEnabled = YES;
     [self.view addSubview:self.scrollView];
     
     self.message = @"sizeThatFits 安咖喱咖喱给拿了个拿过来哪敢了那个拿来跟那个了那个12345678了那个来那个狼哪个 来那个狼浪阿鲁高,Today is a fine day安咖喱咖喱给拿了个拿过来哪敢了那个拿来跟那个了那个了那个来那个狼哪个 来那个狼浪阿鲁高234567890";
@@ -30,6 +33,7 @@
     [self addSiztToFit];
     [self sizeWithAttributes];
     [self boundingRectWithSize];
+    [self.scrollView setContentSize:CGSizeMake(self.view.width, self.label.bottom)];
 }
 
 -(void)addSizeThatFits{
@@ -89,15 +93,15 @@
                                            attributes:@{ NSFontAttributeName : font }
                                               context:nil];
     NSLog(@"size = %@", NSStringFromCGSize(suggestedRect.size));
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(10, 400, self.view.width - 20, 20)];
+    self.label = [[UILabel alloc]initWithFrame:CGRectMake(10, 400, self.view.width - 20, 20)];
     NSMutableAttributedString *attributedMessage = [[NSMutableAttributedString alloc]initWithString:self.message];
     [attributedMessage setAttributes:@{NSForegroundColorAttributeName:@"#cccccc".toColor} range:NSMakeRange(30, 10)];
-    label.numberOfLines = 0;
-    label.font = font;
-    label.attributedText = attributedMessage;
-    label.size = suggestedRect.size;
-    [self.scrollView addSubview:label];
-    NSLog(@"size = %@", NSStringFromCGSize(label.size));
+    self.label.numberOfLines = 0;
+    self.label.font = font;
+    self.label.attributedText = attributedMessage;
+    self.label.size = suggestedRect.size;
+    [self.scrollView addSubview:self.label];
+    NSLog(@"size = %@", NSStringFromCGSize(self.label.size));
 }
 
 @end
