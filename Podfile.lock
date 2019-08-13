@@ -1,32 +1,54 @@
 PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
   - CharacterLocationSeeker (0.0.3)
   - Masonry (1.1.0)
   - MBProgressHUD (1.0.0)
   - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
   - YBAttributeTextTapAction (2.0.6)
 
 DEPENDENCIES:
+  - AFNetworking
   - CharacterLocationSeeker
   - Masonry
   - MBProgressHUD
   - MJExtension
+  - MJRefresh
   - YBAttributeTextTapAction
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AFNetworking
     - CharacterLocationSeeker
     - Masonry
     - MBProgressHUD
     - MJExtension
+    - MJRefresh
     - YBAttributeTextTapAction
 
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   CharacterLocationSeeker: fbce5cb6746c2205a003874c5647ee801b088dbf
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   YBAttributeTextTapAction: 650ff36251479f8cfc7b5dd8fb62587c538ce502
 
-PODFILE CHECKSUM: e4ea1ef1ac688df17f864a4133e22a54e80d5f0c
+PODFILE CHECKSUM: 50e7569cb21dce8be0a57b0ebbba9b062a681cf1
 
 COCOAPODS: 1.6.1

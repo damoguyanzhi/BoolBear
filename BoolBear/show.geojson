@@ -12,7 +12,9 @@
                 ]},
             {"type":"ThreeTool","vc":"CustomTableViewController","sonContent":
                 [{"type":"MJExtension","exampleVC":"MJExtensionClassViewController"},
-                    {"type":"GetUIlabelIndex","exampleVC":"GetUIlabelIndexViewController"}
+                    {"type":"GetUIlabelIndex","exampleVC":"GetUIlabelIndexViewController"},
+                    {"type":"AFNetworking","exampleVC":"AFNetworkingViewController"},
+                    {"type":"MJRefresh","exampleVC":"MJRefreshViewController"}
                 ]}
         ]
     }

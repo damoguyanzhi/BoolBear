@@ -38,6 +38,8 @@
 		9E72C06C22C0B2D1004E6535 /* ThreeClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E72C06B22C0B2D1004E6535 /* ThreeClassViewController.m */; };
 		9E72C06F22C0B906004E6535 /* MJExtensionClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E72C06E22C0B906004E6535 /* MJExtensionClassViewController.m */; };
 		9E72C07222C0B988004E6535 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E72C07122C0B988004E6535 /* UserModel.m */; };
+		9E8A8A852302B09C0087F074 /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8A8A842302B09C0087F074 /* AFNetworkingViewController.m */; };
+		9E8A8A882302B90B0087F074 /* MJRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8A8A872302B90B0087F074 /* MJRefreshViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +102,10 @@
 		9E72C06E22C0B906004E6535 /* MJExtensionClassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJExtensionClassViewController.m; sourceTree = "<group>"; };
 		9E72C07022C0B988004E6535 /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
 		9E72C07122C0B988004E6535 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		9E8A8A832302B09C0087F074 /* AFNetworkingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkingViewController.h; sourceTree = "<group>"; };
+		9E8A8A842302B09C0087F074 /* AFNetworkingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
+		9E8A8A862302B90B0087F074 /* MJRefreshViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRefreshViewController.h; sourceTree = "<group>"; };
+		9E8A8A872302B90B0087F074 /* MJRefreshViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRefreshViewController.m; sourceTree = "<group>"; };
 		D534692445EF44CAA7575867 /* Pods-BoolBear.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoolBear.release.xcconfig"; path = "Target Support Files/Pods-BoolBear/Pods-BoolBear.release.xcconfig"; sourceTree = "<group>"; };
 		ED6242445BE5DD5C8F1A903B /* Pods-BoolBear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoolBear.debug.xcconfig"; path = "Target Support Files/Pods-BoolBear/Pods-BoolBear.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +157,10 @@
 				9E09628B22E839A500059E84 /* GetUIlabelIndexViewController.m */,
 				9E13500422F01B2F00499062 /* LabelHeightViewController.h */,
 				9E13500522F01B2F00499062 /* LabelHeightViewController.m */,
+				9E8A8A832302B09C0087F074 /* AFNetworkingViewController.h */,
+				9E8A8A842302B09C0087F074 /* AFNetworkingViewController.m */,
+				9E8A8A862302B90B0087F074 /* MJRefreshViewController.h */,
+				9E8A8A872302B90B0087F074 /* MJRefreshViewController.m */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -314,6 +324,7 @@
 				9E385143209C075B0097FB84 /* Sources */,
 				9E385144209C075B0097FB84 /* Frameworks */,
 				9E385145209C075B0097FB84 /* Resources */,
+				DB873BD873556F97E8A50477 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -394,6 +405,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DB873BD873556F97E8A50477 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoolBear/Pods-BoolBear-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoolBear/Pods-BoolBear-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -426,7 +459,9 @@
 				9E0477FD225DB4E300442504 /* CustomNavigationViewController.m in Sources */,
 				9E09629E22E95BA200059E84 /* ShowModel.m in Sources */,
 				9E09629522E9490800059E84 /* UIView+XL.m in Sources */,
+				9E8A8A882302B90B0087F074 /* MJRefreshViewController.m in Sources */,
 				9E0477EB225C628E00442504 /* CommonData.m in Sources */,
+				9E8A8A852302B09C0087F074 /* AFNetworkingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

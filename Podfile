@@ -5,4 +5,6 @@ target 'BoolBear' do
   pod 'YBAttributeTextTapAction'
   pod 'CharacterLocationSeeker'
   pod 'MBProgressHUD'
+  pod 'AFNetworking'
+  pod 'MJRefresh'
 end
