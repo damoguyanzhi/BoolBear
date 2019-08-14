@@ -18,6 +18,12 @@
 
 #define WS(weakSelf,var) __weak __typeof(var) weakSelf = var;
 
+#ifdef DEBUG
+#define BoolLog(...) NSLog(__VA_ARGS__)
+#else
+#define BoolLog(...)
+#endif
+
 
 @interface CommonData : NSObject
 

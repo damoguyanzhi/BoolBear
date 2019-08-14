@@ -1,0 +1,11 @@
+../Pods/AFNetworking/
+../Pods/Headers/Private/AFNetworking/
+../Pods/Headers/Private/MJRefresh/
+../Pods/Headers/Public/AFNetworking/
+../Pods/Headers/Public/MJRefresh/
+../Pods/MJRefresh/
+../Pods/Pods.xcodeproj/xcuserdata/RuqiangLiu.xcuserdatad/xcschemes/AFNetworking.xcscheme
+../Pods/Pods.xcodeproj/xcuserdata/RuqiangLiu.xcuserdatad/xcschemes/MJRefresh.xcscheme
+../Pods/Target Support Files/AFNetworking/
+../Pods/Target Support Files/MJRefresh/
+../Pods/Target Support Files/Pods-BoolBear/Pods-BoolBear-resources.sh
