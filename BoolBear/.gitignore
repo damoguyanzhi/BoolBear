@@ -1,4 +1,4 @@
-../Pods/AFNetworking/
+./Pods/AFNetworking/
 ../Pods/Headers/Private/AFNetworking/
 ../Pods/Headers/Private/MJRefresh/
 ../Pods/Headers/Public/AFNetworking/
