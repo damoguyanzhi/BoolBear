@@ -43,6 +43,7 @@
     self.model = [ShowModel mj_objectWithKeyValues:dict[@"firstShow"]];
     self.dataArray = [self.model.typeList mutableCopy];
     [self.tableView reloadData];
+    WS(weakSelf, self);
 }
 
 #pragma mark - Table view data source

@@ -63,7 +63,7 @@
 
 -(void)makeTableView{
     self.tableView = [[UITableView alloc]init];
-    [self.tableView setFrame:CGRectMake(0, 60, self.view.width,self.view.height - 60)];
+    [self.tableView setFrame:CGRectMake(0, [CommonData defaultConfig].navigationBarHeight, self.view.width,self.view.height - [CommonData defaultConfig].navigationBarHeight)];
     self.tableView.backgroundColor = [UIColor clearColor];
     self.tableView.showsVerticalScrollIndicator = NO;
     //self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;

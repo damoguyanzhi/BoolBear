@@ -16,6 +16,7 @@
 
 #define NavigationBarH  [CommonData defaultConfig].navigationBarHeight;
 
+#define WS(weakSelf,var) __weak __typeof(var) weakSelf = var;
 
 
 @interface CommonData : NSObject
