@@ -18,6 +18,14 @@
 
 #define WS(weakSelf,var) __weak __typeof(var) weakSelf = var;
 
+//手机操作系统
+#define iOS7Later XLIOS(>= , 7.0)
+#define iOS8Later XLIOS(>= , 8.0)
+#define iOS7 (iOS7Later & !iOS8Later)
+#define XLIOS(sign ,index) ([UIDevice currentDevice].systemVersion.doubleValue sign index)
+
+#define iOSVersion [UIDevice currentDevice].systemVersion.floatValue
+
 #ifdef DEBUG
 #define BoolLog(...) NSLog(__VA_ARGS__)
 #else

@@ -4,17 +4,15 @@
         "typeList":[
             {"type":"UI","vc":"CustomTableViewController",
                 "sonContent":
-                [{"type":"UIButton","exampleVC":"UIButtonShowViewController"},
-                    {"type":"UILabel","exampleVC":"UILabelShowViewController"}
+                [{"type":"UIButton","exampleVC":"UIButtonShowViewController"}, {"type":"UILabel","exampleVC":"UILabelShowViewController"},{"type":"PartUI","exampleVC":"PartUIViewController"},
+                    {"type":"UITextField","exampleVC":"UITextFieldShowViewController"},{"type":"UICircle","exampleVC":"CircleViewController"}
                 ]},
-            {"type":"Tool","vc":"CustomTableViewController","sonContent":
-                [{"type":"获取Label高度","exampleVC":"LabelHeightViewController"}
+            {"type":"Tool","vc":"CustomTableViewController","sonContent": [{"type":"获取Label高度","exampleVC":"LabelHeightViewController"},{"type":"contentCompression","exampleVC":"CompressionAndHuggingViewController"}
                 ]},
             {"type":"ThreeTool","vc":"CustomTableViewController","sonContent":
                 [{"type":"MJExtension","exampleVC":"MJExtensionClassViewController"},
                     {"type":"GetUIlabelIndex","exampleVC":"GetUIlabelIndexViewController"},
-                    {"type":"AFNetworking","exampleVC":"AFNetworkingViewController"},
-                    {"type":"MJRefresh","exampleVC":"MJRefreshViewController"}
+                    {"type":"AFNetworking","exampleVC":"AFNetworkingViewController"}, {"type":"MJRefresh","exampleVC":"MJRefreshViewController"}
                 ]}
         ]
     }

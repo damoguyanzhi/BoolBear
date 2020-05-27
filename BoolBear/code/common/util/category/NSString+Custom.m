@@ -7,6 +7,7 @@
 //
 
 #import "NSString+Custom.h"
+#import "CommonData.h"
 
 @implementation NSString (Custom)
 
@@ -36,5 +37,42 @@
         return [[self toColor] colorWithAlphaComponent:alpha];
     };
 }
+
+// 自动计算文字的宽度
+- (CGSize)sizeWIthFont:(CGFloat)fontSize height:(CGFloat)height
+{
+    CGSize actualsize = CGSizeZero;
+    UIFont *font = [UIFont systemFontOfSize:fontSize];
+    if (iOS7Later) {
+        //get current font attributes
+        NSDictionary * tdic = [NSDictionary dictionaryWithObjectsAndKeys:font,NSFontAttributeName,nil];
+        //IOS7 fix: get size that text needs, limit the width
+        actualsize =[self boundingRectWithSize:CGSizeMake(MAXFLOAT,height) options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading)  attributes:tdic context:nil].size;
+    }else{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        actualsize = [self sizeWithFont:font constrainedToSize:CGSizeMake(MAXFLOAT,height) lineBreakMode:NSLineBreakByCharWrapping];
+#pragma clang diagnostic pop
+    }
+    return actualsize;
+}
+
+// 自动计算文字的高度
+- (CGSize)sizeWIthFont:(CGFloat)fontSize width:(CGFloat)width
+{
+    CGSize actualsize = CGSizeZero;
+    UIFont *font = [UIFont systemFontOfSize:fontSize];
+    if (iOS7Later) {
+        NSDictionary * tdic = [NSDictionary dictionaryWithObjectsAndKeys:font,NSFontAttributeName,nil];
+        actualsize =[self boundingRectWithSize:CGSizeMake(width, MAXFLOAT) options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading)  attributes:tdic context:nil].size;
+    }else{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        actualsize = [self sizeWithFont:font constrainedToSize:CGSizeMake(width, MAXFLOAT) lineBreakMode:NSLineBreakByCharWrapping];
+#pragma clang diagnostic pop
+    }
+    return actualsize;
+}
+
 
 @end

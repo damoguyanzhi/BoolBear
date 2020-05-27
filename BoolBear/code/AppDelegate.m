@@ -35,6 +35,13 @@
     tabVC.viewControllers= @[nav,vcB,vcC];
     self.window.rootViewController = tabVC;
     [self.window makeKeyAndVisible];
+    
+    NSMutableDictionary *a = [[NSMutableDictionary alloc]init];
+    if(![a objectForKey:@"a"]){
+        a[@"a"] = [[NSMutableArray alloc]init];
+    }else{
+        NSLog(@"NSMutableDictionary:a");
+    }
     return YES;
 }
 

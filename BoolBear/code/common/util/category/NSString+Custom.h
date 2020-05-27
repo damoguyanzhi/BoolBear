@@ -15,4 +15,10 @@
 
 - (UIColor *((^)(CGFloat)))toFullColor;
 
+// 自动计算文字的宽度
+- (CGSize)sizeWIthFont:(CGFloat)fontSize height:(CGFloat)height;
+
+// 自动计算文字的高度
+- (CGSize)sizeWIthFont:(CGFloat)fontSize width:(CGFloat)width;
+
 @end

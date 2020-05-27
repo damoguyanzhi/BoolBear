@@ -40,6 +40,21 @@
     btn.titleLabel.font = [UIFont systemFontOfSize:12];
     [btn setButtonShowType:RSButtonTypeLabelLeft];
     [self.view addSubview:btn];
+    
+    NSDictionary * tdic = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont systemFontOfSize:12],NSFontAttributeName,nil];
+    CGSize size = [@"左图右字" boundingRectWithSize:CGSizeMake(200, 20) options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading)  attributes:tdic context:nil].size;
+    
+    CGFloat distance = 20;
+    
+    UIButton *btn2 = [[UIButton alloc]initWithFrame:CGRectMake(100, 300,16 + distance + size.width, 45)];
+    btn2.backgroundColor = [UIColor redColor];
+    
+    [btn2 setTitle:@"左图右字" forState:UIControlStateNormal];
+    [btn2 setImage:[UIImage imageNamed:@"cloudTeach_button_close"] forState:UIControlStateNormal];
+    [btn2 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [btn2 setTitleEdgeInsets:UIEdgeInsetsMake(0, distance, 0, 0)];
+    btn2.titleLabel.font = [UIFont systemFontOfSize:12];
+    [self.view addSubview:btn2];
 }
 
 @end

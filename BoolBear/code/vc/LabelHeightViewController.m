@@ -83,6 +83,7 @@
     label.attributedText = attributedMessage;
     label.size = size;
     [self.scrollView addSubview:label];
+
     NSLog(@"size = %@", NSStringFromCGSize(label.size));
 }
 

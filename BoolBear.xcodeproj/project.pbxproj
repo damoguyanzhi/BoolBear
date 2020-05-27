@@ -28,6 +28,10 @@
 		9E17EE1D20F9C58500A3F8DA /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E17EE1C20F9C58500A3F8DA /* MainTableViewController.m */; };
 		9E17EE2020F9CDB900A3F8DA /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E17EE1F20F9CDB900A3F8DA /* CustomTableViewController.m */; };
 		9E17EE2420F9DA2E00A3F8DA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E17EE2320F9DA2E00A3F8DA /* MainViewController.m */; };
+		9E2850B7247CFB6E00513A9E /* XLCircleColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2850B6247CFB6E00513A9E /* XLCircleColorView.m */; };
+		9E2850BC247CFBFD00513A9E /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2850BB247CFBFD00513A9E /* CircleViewController.m */; };
+		9E2EE0FF2473A75F008E051E /* UITextFieldShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2EE0FE2473A75F008E051E /* UITextFieldShowViewController.m */; };
+		9E2F8712246947850019067E /* PartUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F8711246947850019067E /* PartUIViewController.m */; };
 		9E31C03522602AD100769138 /* UIButton+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E31C03422602AD100769138 /* UIButton+Custom.m */; };
 		9E38514C209C075B0097FB84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E38514B209C075B0097FB84 /* AppDelegate.m */; };
 		9E385152209C075B0097FB84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E385150209C075B0097FB84 /* Main.storyboard */; };
@@ -40,6 +44,8 @@
 		9E72C07222C0B988004E6535 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E72C07122C0B988004E6535 /* UserModel.m */; };
 		9E8A8A852302B09C0087F074 /* AFNetworkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8A8A842302B09C0087F074 /* AFNetworkingViewController.m */; };
 		9E8A8A882302B90B0087F074 /* MJRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8A8A872302B90B0087F074 /* MJRefreshViewController.m */; };
+		9EFFB5D623C327FE00D4C3B7 /* CompressionAndHuggingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFB5D523C327FE00D4C3B7 /* CompressionAndHuggingViewController.m */; };
+		9EFFB5D923C95D8500D4C3B7 /* UILabel+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EFFB5D823C95D8500D4C3B7 /* UILabel+Custom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +90,14 @@
 		9E17EE1F20F9CDB900A3F8DA /* CustomTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewController.m; sourceTree = "<group>"; };
 		9E17EE2220F9DA2E00A3F8DA /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		9E17EE2320F9DA2E00A3F8DA /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		9E2850B5247CFB6E00513A9E /* XLCircleColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCircleColorView.h; sourceTree = "<group>"; };
+		9E2850B6247CFB6E00513A9E /* XLCircleColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCircleColorView.m; sourceTree = "<group>"; };
+		9E2850BA247CFBFD00513A9E /* CircleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
+		9E2850BB247CFBFD00513A9E /* CircleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleViewController.m; sourceTree = "<group>"; };
+		9E2EE0FD2473A75F008E051E /* UITextFieldShowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextFieldShowViewController.h; sourceTree = "<group>"; };
+		9E2EE0FE2473A75F008E051E /* UITextFieldShowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextFieldShowViewController.m; sourceTree = "<group>"; };
+		9E2F8710246947850019067E /* PartUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PartUIViewController.h; sourceTree = "<group>"; };
+		9E2F8711246947850019067E /* PartUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartUIViewController.m; sourceTree = "<group>"; };
 		9E31C03322602AD100769138 /* UIButton+Custom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Custom.h"; sourceTree = "<group>"; };
 		9E31C03422602AD100769138 /* UIButton+Custom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Custom.m"; sourceTree = "<group>"; };
 		9E385147209C075B0097FB84 /* BoolBear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoolBear.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +120,10 @@
 		9E8A8A842302B09C0087F074 /* AFNetworkingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingViewController.m; sourceTree = "<group>"; };
 		9E8A8A862302B90B0087F074 /* MJRefreshViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRefreshViewController.h; sourceTree = "<group>"; };
 		9E8A8A872302B90B0087F074 /* MJRefreshViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRefreshViewController.m; sourceTree = "<group>"; };
+		9EFFB5D423C327FE00D4C3B7 /* CompressionAndHuggingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompressionAndHuggingViewController.h; sourceTree = "<group>"; };
+		9EFFB5D523C327FE00D4C3B7 /* CompressionAndHuggingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompressionAndHuggingViewController.m; sourceTree = "<group>"; };
+		9EFFB5D723C95D8500D4C3B7 /* UILabel+Custom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Custom.h"; sourceTree = "<group>"; };
+		9EFFB5D823C95D8500D4C3B7 /* UILabel+Custom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Custom.m"; sourceTree = "<group>"; };
 		D534692445EF44CAA7575867 /* Pods-BoolBear.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoolBear.release.xcconfig"; path = "Target Support Files/Pods-BoolBear/Pods-BoolBear.release.xcconfig"; sourceTree = "<group>"; };
 		ED6242445BE5DD5C8F1A903B /* Pods-BoolBear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoolBear.debug.xcconfig"; path = "Target Support Files/Pods-BoolBear/Pods-BoolBear.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,6 +179,14 @@
 				9E8A8A842302B09C0087F074 /* AFNetworkingViewController.m */,
 				9E8A8A862302B90B0087F074 /* MJRefreshViewController.h */,
 				9E8A8A872302B90B0087F074 /* MJRefreshViewController.m */,
+				9EFFB5D423C327FE00D4C3B7 /* CompressionAndHuggingViewController.h */,
+				9EFFB5D523C327FE00D4C3B7 /* CompressionAndHuggingViewController.m */,
+				9E2F8710246947850019067E /* PartUIViewController.h */,
+				9E2F8711246947850019067E /* PartUIViewController.m */,
+				9E2EE0FD2473A75F008E051E /* UITextFieldShowViewController.h */,
+				9E2EE0FE2473A75F008E051E /* UITextFieldShowViewController.m */,
+				9E2850BA247CFBFD00513A9E /* CircleViewController.h */,
+				9E2850BB247CFBFD00513A9E /* CircleViewController.m */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -226,6 +252,8 @@
 			children = (
 				9E047804225DBD4300442504 /* NSString+Custom.h */,
 				9E047805225DBD4300442504 /* NSString+Custom.m */,
+				9EFFB5D723C95D8500D4C3B7 /* UILabel+Custom.h */,
+				9EFFB5D823C95D8500D4C3B7 /* UILabel+Custom.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -233,6 +261,8 @@
 		9E17EE1620F9A50A00A3F8DA /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				9E2850B5247CFB6E00513A9E /* XLCircleColorView.h */,
+				9E2850B6247CFB6E00513A9E /* XLCircleColorView.m */,
 				9E09629722E94DE600059E84 /* category */,
 				9E0477DE2255D14400442504 /* CustomButton.h */,
 				9E0477DF2255D14400442504 /* CustomButton.m */,
@@ -435,15 +465,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E04780C225DC98300442504 /* UILabelShowViewController.m in Sources */,
+				9E2EE0FF2473A75F008E051E /* UITextFieldShowViewController.m in Sources */,
 				9E07043522E7023B0043C843 /* ClickPartInUILabelViewController.m in Sources */,
 				9E38515A209C075B0097FB84 /* main.m in Sources */,
 				9E72C06F22C0B906004E6535 /* MJExtensionClassViewController.m in Sources */,
 				9E17EE2420F9DA2E00A3F8DA /* MainViewController.m in Sources */,
+				9E2850BC247CFBFD00513A9E /* CircleViewController.m in Sources */,
 				9E385162209C07A80097FB84 /* NumberTool.m in Sources */,
 				9E047809225DC83E00442504 /* CustomTopLabel.m in Sources */,
 				9E0477F6225D8FD300442504 /* UIButtonShowViewController.m in Sources */,
+				9E2F8712246947850019067E /* PartUIViewController.m in Sources */,
+				9E2850B7247CFB6E00513A9E /* XLCircleColorView.m in Sources */,
 				9E13500622F01B2F00499062 /* LabelHeightViewController.m in Sources */,
 				9E0962A422E9971300059E84 /* Manager.m in Sources */,
+				9EFFB5D623C327FE00D4C3B7 /* CompressionAndHuggingViewController.m in Sources */,
 				9E0477E02255D14400442504 /* CustomButton.m in Sources */,
 				9E0962A122E991F600059E84 /* MBProgressHUD+XL.m in Sources */,
 				9E047806225DBD4300442504 /* NSString+Custom.m in Sources */,
@@ -458,6 +493,7 @@
 				9E72C07222C0B988004E6535 /* UserModel.m in Sources */,
 				9E0477FD225DB4E300442504 /* CustomNavigationViewController.m in Sources */,
 				9E09629E22E95BA200059E84 /* ShowModel.m in Sources */,
+				9EFFB5D923C95D8500D4C3B7 /* UILabel+Custom.m in Sources */,
 				9E09629522E9490800059E84 /* UIView+XL.m in Sources */,
 				9E8A8A882302B90B0087F074 /* MJRefreshViewController.m in Sources */,
 				9E0477EB225C628E00442504 /* CommonData.m in Sources */,
