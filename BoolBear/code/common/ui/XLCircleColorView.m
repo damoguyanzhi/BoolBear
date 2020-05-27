@@ -86,7 +86,7 @@
     CGContextClip(ctx);
 
     // 4. 用渐变色填充
-    CGContextDrawLinearGradient(ctx, gradient, CGPointMake(0, 0), CGPointMake(0, rect.size.height), 0);
+    CGContextDrawLinearGradient(ctx, gradient, CGPointMake(0, 0), CGPointMake(0, rect.size.height/2), 0);
     // 释放渐变色
     CGGradientRelease(gradient);
 }

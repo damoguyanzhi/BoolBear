@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+//圆弧图形
 @interface XLCircleColorView : UIView
 
 @property (nonatomic, assign) float lineWidth;

@@ -39,6 +39,10 @@
 		9E385157209C075B0097FB84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E385155209C075B0097FB84 /* LaunchScreen.storyboard */; };
 		9E38515A209C075B0097FB84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E385159209C075B0097FB84 /* main.m */; };
 		9E385162209C07A80097FB84 /* NumberTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E385161209C07A80097FB84 /* NumberTool.m */; };
+		9E3E547A247E40E300A85734 /* XLStudyAreaTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3E5478247E40E300A85734 /* XLStudyAreaTipView.m */; };
+		9E3E547D247E417D00A85734 /* UIImage+XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3E547C247E417D00A85734 /* UIImage+XL.m */; };
+		9E3E5483247E443400A85734 /* XLPieChartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3E547F247E443400A85734 /* XLPieChartModel.m */; };
+		9E3E5484247E443400A85734 /* XLPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3E5482247E443400A85734 /* XLPieChartView.m */; };
 		9E72C06C22C0B2D1004E6535 /* ThreeClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E72C06B22C0B2D1004E6535 /* ThreeClassViewController.m */; };
 		9E72C06F22C0B906004E6535 /* MJExtensionClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E72C06E22C0B906004E6535 /* MJExtensionClassViewController.m */; };
 		9E72C07222C0B988004E6535 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E72C07122C0B988004E6535 /* UserModel.m */; };
@@ -100,7 +104,7 @@
 		9E2F8711246947850019067E /* PartUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartUIViewController.m; sourceTree = "<group>"; };
 		9E31C03322602AD100769138 /* UIButton+Custom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Custom.h"; sourceTree = "<group>"; };
 		9E31C03422602AD100769138 /* UIButton+Custom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Custom.m"; sourceTree = "<group>"; };
-		9E385147209C075B0097FB84 /* BoolBear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoolBear.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E385147209C075B0097FB84 /* 布尔.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "布尔.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E38514A209C075B0097FB84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9E38514B209C075B0097FB84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9E385151209C075B0097FB84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -110,6 +114,14 @@
 		9E385159209C075B0097FB84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9E385160209C07A80097FB84 /* NumberTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberTool.h; sourceTree = "<group>"; };
 		9E385161209C07A80097FB84 /* NumberTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberTool.m; sourceTree = "<group>"; };
+		9E3E5478247E40E300A85734 /* XLStudyAreaTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLStudyAreaTipView.m; sourceTree = "<group>"; };
+		9E3E5479247E40E300A85734 /* XLStudyAreaTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLStudyAreaTipView.h; sourceTree = "<group>"; };
+		9E3E547B247E417D00A85734 /* UIImage+XL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XL.h"; sourceTree = "<group>"; };
+		9E3E547C247E417D00A85734 /* UIImage+XL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XL.m"; sourceTree = "<group>"; };
+		9E3E547F247E443400A85734 /* XLPieChartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPieChartModel.m; sourceTree = "<group>"; };
+		9E3E5480247E443400A85734 /* XLPieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPieChartView.h; sourceTree = "<group>"; };
+		9E3E5481247E443400A85734 /* XLPieChartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPieChartModel.h; sourceTree = "<group>"; };
+		9E3E5482247E443400A85734 /* XLPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPieChartView.m; sourceTree = "<group>"; };
 		9E72C06A22C0B2D1004E6535 /* ThreeClassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeClassViewController.h; sourceTree = "<group>"; };
 		9E72C06B22C0B2D1004E6535 /* ThreeClassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeClassViewController.m; sourceTree = "<group>"; };
 		9E72C06D22C0B906004E6535 /* MJExtensionClassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJExtensionClassViewController.h; sourceTree = "<group>"; };
@@ -250,6 +262,8 @@
 		9E09629922E9523B00059E84 /* category */ = {
 			isa = PBXGroup;
 			children = (
+				9E3E547B247E417D00A85734 /* UIImage+XL.h */,
+				9E3E547C247E417D00A85734 /* UIImage+XL.m */,
 				9E047804225DBD4300442504 /* NSString+Custom.h */,
 				9E047805225DBD4300442504 /* NSString+Custom.m */,
 				9EFFB5D723C95D8500D4C3B7 /* UILabel+Custom.h */,
@@ -261,6 +275,9 @@
 		9E17EE1620F9A50A00A3F8DA /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				9E3E547E247E443400A85734 /* XLPieChart */,
+				9E3E5479247E40E300A85734 /* XLStudyAreaTipView.h */,
+				9E3E5478247E40E300A85734 /* XLStudyAreaTipView.m */,
 				9E2850B5247CFB6E00513A9E /* XLCircleColorView.h */,
 				9E2850B6247CFB6E00513A9E /* XLCircleColorView.m */,
 				9E09629722E94DE600059E84 /* category */,
@@ -311,7 +328,7 @@
 		9E385148209C075B0097FB84 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9E385147209C075B0097FB84 /* BoolBear.app */,
+				9E385147209C075B0097FB84 /* 布尔.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -333,6 +350,17 @@
 				9E385161209C07A80097FB84 /* NumberTool.m */,
 			);
 			path = util;
+			sourceTree = "<group>";
+		};
+		9E3E547E247E443400A85734 /* XLPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				9E3E547F247E443400A85734 /* XLPieChartModel.m */,
+				9E3E5480247E443400A85734 /* XLPieChartView.h */,
+				9E3E5481247E443400A85734 /* XLPieChartModel.h */,
+				9E3E5482247E443400A85734 /* XLPieChartView.m */,
+			);
+			path = XLPieChart;
 			sourceTree = "<group>";
 		};
 		9F9157D5AF3846BA676464F7 /* Frameworks */ = {
@@ -362,7 +390,7 @@
 			);
 			name = BoolBear;
 			productName = BoolBear;
-			productReference = 9E385147209C075B0097FB84 /* BoolBear.app */;
+			productReference = 9E385147209C075B0097FB84 /* 布尔.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -472,6 +500,7 @@
 				9E17EE2420F9DA2E00A3F8DA /* MainViewController.m in Sources */,
 				9E2850BC247CFBFD00513A9E /* CircleViewController.m in Sources */,
 				9E385162209C07A80097FB84 /* NumberTool.m in Sources */,
+				9E3E547A247E40E300A85734 /* XLStudyAreaTipView.m in Sources */,
 				9E047809225DC83E00442504 /* CustomTopLabel.m in Sources */,
 				9E0477F6225D8FD300442504 /* UIButtonShowViewController.m in Sources */,
 				9E2F8712246947850019067E /* PartUIViewController.m in Sources */,
@@ -482,13 +511,16 @@
 				9E0477E02255D14400442504 /* CustomButton.m in Sources */,
 				9E0962A122E991F600059E84 /* MBProgressHUD+XL.m in Sources */,
 				9E047806225DBD4300442504 /* NSString+Custom.m in Sources */,
+				9E3E547D247E417D00A85734 /* UIImage+XL.m in Sources */,
 				9E17EE1D20F9C58500A3F8DA /* MainTableViewController.m in Sources */,
 				9E17EE2020F9CDB900A3F8DA /* CustomTableViewController.m in Sources */,
 				9E0477E7225C4C3700442504 /* CustomNaviationBarView.m in Sources */,
 				9E09628C22E839A500059E84 /* GetUIlabelIndexViewController.m in Sources */,
 				9E38514C209C075B0097FB84 /* AppDelegate.m in Sources */,
 				9E31C03522602AD100769138 /* UIButton+Custom.m in Sources */,
+				9E3E5484247E443400A85734 /* XLPieChartView.m in Sources */,
 				9E0477FA225D954E00442504 /* DataModel.m in Sources */,
+				9E3E5483247E443400A85734 /* XLPieChartModel.m in Sources */,
 				9E72C06C22C0B2D1004E6535 /* ThreeClassViewController.m in Sources */,
 				9E72C07222C0B988004E6535 /* UserModel.m in Sources */,
 				9E0477FD225DB4E300442504 /* CustomNavigationViewController.m in Sources */,
@@ -646,7 +678,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LIBTOOLFLAGS = "$(inherited) -ObjC -l\"Masonry\" -framework \"Foundation\" -framework \"UIKit\"";
 				PRODUCT_BUNDLE_IDENTIFIER = idea.BoolBear;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "布尔";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -667,7 +699,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LIBTOOLFLAGS = "$(inherited) -ObjC -l\"Masonry\" -framework \"Foundation\" -framework \"UIKit\"";
 				PRODUCT_BUNDLE_IDENTIFIER = idea.BoolBear;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "布尔";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
