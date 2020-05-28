@@ -7,7 +7,7 @@
                 [{"type":"UIButton","exampleVC":"UIButtonShowViewController"}, {"type":"UILabel","exampleVC":"UILabelShowViewController"},{"type":"PartUI","exampleVC":"PartUIViewController"},
                     {"type":"UITextField","exampleVC":"UITextFieldShowViewController"},{"type":"UICircle","exampleVC":"CircleViewController"}
                 ]},
-            {"type":"Tool","vc":"CustomTableViewController","sonContent": [{"type":"获取Label高度","exampleVC":"LabelHeightViewController"},{"type":"contentCompression","exampleVC":"CompressionAndHuggingViewController"}
+            {"type":"Tool","vc":"CustomTableViewController","sonContent": [{"type":"获取Label高度","exampleVC":"LabelHeightViewController"},{"type":"约束","exampleVC":"CompressionAndHuggingViewController"},{"type":"与js交互","exampleVC":"WKWebViewController"}
                 ]},
             {"type":"ThreeTool","vc":"CustomTableViewController","sonContent":
                 [{"type":"MJExtension","exampleVC":"MJExtensionClassViewController"},

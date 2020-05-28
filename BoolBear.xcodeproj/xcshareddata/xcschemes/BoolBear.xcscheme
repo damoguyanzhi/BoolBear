@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9E385146209C075B0097FB84"
-               BuildableName = "BoolBear.app"
+               BuildableName = "&#x5e03;&#x5c14;.app"
                BlueprintName = "BoolBear"
                ReferencedContainer = "container:BoolBear.xcodeproj">
             </BuildableReference>
@@ -27,19 +27,17 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <Testables>
-      </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9E385146209C075B0097FB84"
-            BuildableName = "BoolBear.app"
+            BuildableName = "&#x5e03;&#x5c14;.app"
             BlueprintName = "BoolBear"
             ReferencedContainer = "container:BoolBear.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <Testables>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -56,13 +54,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9E385146209C075B0097FB84"
-            BuildableName = "BoolBear.app"
+            BuildableName = "&#x5e03;&#x5c14;.app"
             BlueprintName = "BoolBear"
             ReferencedContainer = "container:BoolBear.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -75,7 +71,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9E385146209C075B0097FB84"
-            BuildableName = "BoolBear.app"
+            BuildableName = "&#x5e03;&#x5c14;.app"
             BlueprintName = "BoolBear"
             ReferencedContainer = "container:BoolBear.xcodeproj">
          </BuildableReference>

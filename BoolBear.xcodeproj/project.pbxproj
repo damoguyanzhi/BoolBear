@@ -30,6 +30,8 @@
 		9E17EE2420F9DA2E00A3F8DA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E17EE2320F9DA2E00A3F8DA /* MainViewController.m */; };
 		9E2850B7247CFB6E00513A9E /* XLCircleColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2850B6247CFB6E00513A9E /* XLCircleColorView.m */; };
 		9E2850BC247CFBFD00513A9E /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2850BB247CFBFD00513A9E /* CircleViewController.m */; };
+		9E2B8662247E6B3D00AB9C65 /* WKWebViewText.html in Resources */ = {isa = PBXBuildFile; fileRef = 9E2B8661247E6B3D00AB9C65 /* WKWebViewText.html */; };
+		9E2B8665247E6B5300AB9C65 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B8664247E6B5200AB9C65 /* WKWebViewController.m */; };
 		9E2EE0FF2473A75F008E051E /* UITextFieldShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2EE0FE2473A75F008E051E /* UITextFieldShowViewController.m */; };
 		9E2F8712246947850019067E /* PartUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F8711246947850019067E /* PartUIViewController.m */; };
 		9E31C03522602AD100769138 /* UIButton+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E31C03422602AD100769138 /* UIButton+Custom.m */; };
@@ -98,6 +100,9 @@
 		9E2850B6247CFB6E00513A9E /* XLCircleColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCircleColorView.m; sourceTree = "<group>"; };
 		9E2850BA247CFBFD00513A9E /* CircleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
 		9E2850BB247CFBFD00513A9E /* CircleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleViewController.m; sourceTree = "<group>"; };
+		9E2B8661247E6B3D00AB9C65 /* WKWebViewText.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WKWebViewText.html; sourceTree = "<group>"; };
+		9E2B8663247E6B5200AB9C65 /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		9E2B8664247E6B5200AB9C65 /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
 		9E2EE0FD2473A75F008E051E /* UITextFieldShowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextFieldShowViewController.h; sourceTree = "<group>"; };
 		9E2EE0FE2473A75F008E051E /* UITextFieldShowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextFieldShowViewController.m; sourceTree = "<group>"; };
 		9E2F8710246947850019067E /* PartUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PartUIViewController.h; sourceTree = "<group>"; };
@@ -173,6 +178,8 @@
 		9E0477EC225D8C3700442504 /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				9E2B8663247E6B5200AB9C65 /* WKWebViewController.h */,
+				9E2B8664247E6B5200AB9C65 /* WKWebViewController.m */,
 				9E0477F4225D8FD300442504 /* UIButtonShowViewController.h */,
 				9E0477F5225D8FD300442504 /* UIButtonShowViewController.m */,
 				9E04780A225DC98300442504 /* UILabelShowViewController.h */,
@@ -235,6 +242,7 @@
 		9E09629122E946C300059E84 /* supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9E2B8661247E6B3D00AB9C65 /* WKWebViewText.html */,
 				9E385150209C075B0097FB84 /* Main.storyboard */,
 				9E385153209C075B0097FB84 /* Assets.xcassets */,
 				9E385155209C075B0097FB84 /* LaunchScreen.storyboard */,
@@ -432,6 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E09629B22E9557500059E84 /* show.geojson in Resources */,
+				9E2B8662247E6B3D00AB9C65 /* WKWebViewText.html in Resources */,
 				9E385157209C075B0097FB84 /* LaunchScreen.storyboard in Resources */,
 				9E385154209C075B0097FB84 /* Assets.xcassets in Resources */,
 				9E385152209C075B0097FB84 /* Main.storyboard in Resources */,
@@ -497,6 +506,7 @@
 				9E07043522E7023B0043C843 /* ClickPartInUILabelViewController.m in Sources */,
 				9E38515A209C075B0097FB84 /* main.m in Sources */,
 				9E72C06F22C0B906004E6535 /* MJExtensionClassViewController.m in Sources */,
+				9E2B8665247E6B5300AB9C65 /* WKWebViewController.m in Sources */,
 				9E17EE2420F9DA2E00A3F8DA /* MainViewController.m in Sources */,
 				9E2850BC247CFBFD00513A9E /* CircleViewController.m in Sources */,
 				9E385162209C07A80097FB84 /* NumberTool.m in Sources */,
