@@ -43,6 +43,12 @@
         NSLog(@"NSMutableDictionary:a");
     }
     return YES;
+    
+}
+
+//判断每个页面支持旋转的方向
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 

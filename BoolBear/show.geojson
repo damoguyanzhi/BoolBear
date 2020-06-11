@@ -4,10 +4,10 @@
         "typeList":[
             {"type":"UI","vc":"CustomTableViewController",
                 "sonContent":
-                [{"type":"UIButton","exampleVC":"UIButtonShowViewController"}, {"type":"UILabel","exampleVC":"UILabelShowViewController"},{"type":"PartUI","exampleVC":"PartUIViewController"},
-                    {"type":"UITextField","exampleVC":"UITextFieldShowViewController"},{"type":"UICircle","exampleVC":"CircleViewController"}
+                [{"type":"UIButton","exampleVC":"UIButtonShowViewController"}, {"type":"UILabel","exampleVC":"UILabelShowViewController"},{"type":"PartUI","exampleVC":"PartUIViewController"}, {"type":"UITextField","exampleVC":"UITextFieldShowViewController"},{"type":"UICircle","exampleVC":"CircleViewController"},{"type":"canDragTableView","exampleVC":"DragTableViewController"}
                 ]},
-            {"type":"Tool","vc":"CustomTableViewController","sonContent": [{"type":"获取Label高度","exampleVC":"LabelHeightViewController"},{"type":"约束","exampleVC":"CompressionAndHuggingViewController"},{"type":"与js交互","exampleVC":"WKWebViewController"}
+            {"type":"Tool","vc":"CustomTableViewController","sonContent": [{"type":"获取Label高度","exampleVC":"LabelHeightViewController"},{"type":"约束","exampleVC":"CompressionAndHuggingViewController"},{"type":"与js交互","exampleVC":"WKWebViewController"},
+                {"type":"图片滑动切换","exampleVC":"ImageScrollViewController"}
                 ]},
             {"type":"ThreeTool","vc":"CustomTableViewController","sonContent":
                 [{"type":"MJExtension","exampleVC":"MJExtensionClassViewController"},
