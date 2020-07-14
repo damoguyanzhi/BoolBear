@@ -38,6 +38,8 @@
 		9E2F8712246947850019067E /* PartUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E2F8711246947850019067E /* PartUIViewController.m */; };
 		9E31C03522602AD100769138 /* UIButton+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E31C03422602AD100769138 /* UIButton+Custom.m */; };
 		9E335B592490D1AF009C8BB1 /* ImageScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E335B582490D1AF009C8BB1 /* ImageScrollViewController.m */; };
+		9E377CF724BC0AD400F9AF47 /* XLSysGruidanceFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E377CF524BC0AD400F9AF47 /* XLSysGruidanceFilterView.m */; };
+		9E377CFA24BC0BA300F9AF47 /* PopViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E377CF924BC0BA300F9AF47 /* PopViewViewController.m */; };
 		9E38514C209C075B0097FB84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E38514B209C075B0097FB84 /* AppDelegate.m */; };
 		9E385152209C075B0097FB84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E385150209C075B0097FB84 /* Main.storyboard */; };
 		9E385154209C075B0097FB84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E385153209C075B0097FB84 /* Assets.xcassets */; };
@@ -118,6 +120,10 @@
 		9E31C03422602AD100769138 /* UIButton+Custom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Custom.m"; sourceTree = "<group>"; };
 		9E335B572490D1AF009C8BB1 /* ImageScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageScrollViewController.h; sourceTree = "<group>"; };
 		9E335B582490D1AF009C8BB1 /* ImageScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageScrollViewController.m; sourceTree = "<group>"; };
+		9E377CF524BC0AD400F9AF47 /* XLSysGruidanceFilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSysGruidanceFilterView.m; sourceTree = "<group>"; };
+		9E377CF624BC0AD400F9AF47 /* XLSysGruidanceFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSysGruidanceFilterView.h; sourceTree = "<group>"; };
+		9E377CF824BC0BA300F9AF47 /* PopViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopViewViewController.h; sourceTree = "<group>"; };
+		9E377CF924BC0BA300F9AF47 /* PopViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopViewViewController.m; sourceTree = "<group>"; };
 		9E385147209C075B0097FB84 /* 布尔.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "布尔.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E38514A209C075B0097FB84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9E38514B209C075B0097FB84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -219,6 +225,8 @@
 				9E335B582490D1AF009C8BB1 /* ImageScrollViewController.m */,
 				9E2A046D249203F300DABB98 /* DragTableViewController.h */,
 				9E2A046E249203F300DABB98 /* DragTableViewController.m */,
+				9E377CF824BC0BA300F9AF47 /* PopViewViewController.h */,
+				9E377CF924BC0BA300F9AF47 /* PopViewViewController.m */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -299,6 +307,8 @@
 		9E17EE1620F9A50A00A3F8DA /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				9E377CF624BC0AD400F9AF47 /* XLSysGruidanceFilterView.h */,
+				9E377CF524BC0AD400F9AF47 /* XLSysGruidanceFilterView.m */,
 				9E3E547E247E443400A85734 /* XLPieChart */,
 				9E3E5479247E40E300A85734 /* XLStudyAreaTipView.h */,
 				9E3E5478247E40E300A85734 /* XLStudyAreaTipView.m */,
@@ -527,9 +537,11 @@
 				9E04780C225DC98300442504 /* UILabelShowViewController.m in Sources */,
 				9E2EE0FF2473A75F008E051E /* UITextFieldShowViewController.m in Sources */,
 				9E07043522E7023B0043C843 /* ClickPartInUILabelViewController.m in Sources */,
+				9E377CFA24BC0BA300F9AF47 /* PopViewViewController.m in Sources */,
 				9E38515A209C075B0097FB84 /* main.m in Sources */,
 				9E72C06F22C0B906004E6535 /* MJExtensionClassViewController.m in Sources */,
 				9E2B8665247E6B5300AB9C65 /* WKWebViewController.m in Sources */,
+				9E377CF724BC0AD400F9AF47 /* XLSysGruidanceFilterView.m in Sources */,
 				9E17EE2420F9DA2E00A3F8DA /* MainViewController.m in Sources */,
 				9E2850BC247CFBFD00513A9E /* CircleViewController.m in Sources */,
 				9E385162209C07A80097FB84 /* NumberTool.m in Sources */,

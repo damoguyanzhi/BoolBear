@@ -163,7 +163,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "96DC3496-1D5B-4E72-B66A-80945420E9EE"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BoolBear/code/AppDelegate.m"
@@ -188,6 +188,22 @@
             startingLineNumber = "35"
             endingLineNumber = "35"
             landmarkName = "-longPress:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3ECFFFB6-5ADD-4FF1-96D5-20EFBD1A19E0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BoolBear/code/common/ui/XLSysGruidanceFilterView.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "+showInView:selectSectionIndex:selectIndex:currentView:viewWidth:block:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
